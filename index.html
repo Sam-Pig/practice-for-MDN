@@ -9,20 +9,20 @@
 </head>
 <body> 
     <header>
-        <p>header</p>
+        header
         <nav>
-            <p>nav</p>
+            nav
         </nav>
     </header>
     <main>
-        <p>main</p>
-        <h1>MDN的实践</h1>
-        <section>
-            <p>section 01</p>
+        main
+        <h1>MDN的实践全记录</h1>
+        <section class="section-text">
+            section 01
             <h2>关于文本</h2>
             <article>
-                <p>article 01</p>
-                <h3>滚雪球或利用复利<i>——学习和实践的指导原则和基本思路</i></h3>
+                article 01
+                <h3>滚雪球或利用复利<i><small>——学习和实践的指导原则和基本思路</small></i></h3>
                 <p>
                     由已知到未知，迭代地保守主义地前进，这是学习和实践的指导原则和基本思路。滚雪球作业的关键在于什么？在于你不能放弃你已经在手的雪，而去追寻不在手的雪。正确的做法是，先搓出一个小雪球，凝聚它，然后让它与其他的雪接触，再慢慢推动它，让更多的雪粘附上来。这个版本，是雪球的原型，或者称为“雪球的核心”，它是一切伟大事业的开端。放弃核心，等于选择死亡。
                 </p>   
@@ -30,8 +30,8 @@
             <article>article 02 </article>
             <article>article 03</article>
         </section>
-        <section>
-            <p>section 02</p>
+        <section class="section-table">
+            section 02
             <h2>关于表格</h2>
             <table class="table-normal">
                 <tr>
@@ -252,19 +252,66 @@
                 </tfoot>
             </table>
         </section>
-        <section>
-            <p>section 03</p>
+        <section class="section-form">
+            section 03
             <h2>关于表单</h2>
+            <form class="form-simple" action="#" method="POST">
+                <fieldset>
+                    <legend>简单的表单实践</legend>
+                    <div>
+                            <label for="fsname">姓名：</label>
+                            <input type="text" id="fsname" value="通过value属性设置默认值" name="user_name">
+                        </div>
+                        <div>
+                            <label for="fsemail">电子邮箱：</label>
+                            <input type="email" id="fsemail" value="example@qq.com" name="user_email">
+                        </div>
+                        <div>
+                            <label for="fsmsg">信息：</label>
+                            <textarea id="fsmsg" cols="30" rows="10" name="user_messge">直接在元素的content区域写入默认文本。
+注意：这里的默认值设定效果其实是类似于&lt;pre&gt;的，但也有所不同。
+                            </textarea>
+                        </div>
+                        <div>
+                            <button type="submit">提交</button>
+                            <button type="reset">重置</button>
+                            <button type="menu">菜单</button>
+                            <button type="button">什么也不干</button>
+                            <input type="button" value="input定义的button">
+                        </div>                    
+                </fieldset>
+            </form>
+            <form class="form-text" action="#" method="POST">
+                <fieldset>
+                    <legend>input7种基本type实践</legend>
+                    <div><label for="fttext">单行文本：</label><input type="text" value="text" id="fttext" name="text"></div>
+                    <div><label for="ftemail">电子邮箱：</label><input type="email" value="email" id="ftemail" name="email" multiple></div>
+                    <div><label for="fturl">URL：</label><input type="url" value="url" id="fturl" name="url"></div>
+                    <div><label for="ftsearch">搜索：</label><input type="search" value="search" id="ftsearch" name="src"></div>
+                    <div><label for="fttel">电话号码：</label><input type="tel" value="tel" fttel name="tel"></div>
+                    <div><label for="ftpwd">密码：</label><input type="password" value="password" id="ftpwd" name="pwd"></div>
+                    <div><label for="ftbtn">文本按钮：</label><input type="button" value="button" id="ftbtn" name="btn"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>textarea的实践</legend>
+                    <label for="ftta">多行文本：</label>
+                    <textarea name="messge" id="ftta" cols="30" rows="10" wrap="hard">name="messge" id="ftta" cols="30" rows="10" wrap="hard"</textarea>
+                </fieldset>
+            </form>
         </section>
         <section>
-            <p>section 04</p>
+            section 04
             <h2>关于多媒体与嵌入</h2>
         </section>
     </main>
-    <aside>aside</aside>
+    <aside>
+        aside
+    </aside>
     <footer>
-        <p>footer</p>
-        <address>address</address>
+        footer
+        <address>
+            address
+        </address>
     </footer>
 </body>
 </html>

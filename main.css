@@ -1,5 +1,6 @@
 * {
     border: 1px solid black;
+    font-family: Arial,x-locale-body,sans-serif,'宋体';
 }
 
 .table-normal ~ table {
